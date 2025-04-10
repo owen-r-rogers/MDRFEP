@@ -6,6 +6,9 @@ This contains all of the code and scripts that I used for my MA in chemistry the
 
 The first part of this is setting up the molecular dynamics (MD) run
 
+### Rosetta part of MDR-FEP
+The general order of this is: create_resfiles.py --> mdr.py (either from the command line or via a submission script)
+
 
 ### Miscellaneous
 
