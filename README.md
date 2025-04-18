@@ -28,5 +28,12 @@ main/
       |--- input/
       |--- resfiles/
 
+## Create Rosetta resfiles for each sequence position
+We want to repack all residues within a certain distance of each residue being mutated, and we want to do this for the same residues over the entire Rosetta repacking process. Edge residues that move in and out of an arbitrary distance will only be repacked part of the time, so doing this step fixes which residues are being repacked.
+
+for this, you need to specify what distance this is, and you need to specify which chain you want to mutate. 
+<pre> python create_resfiles -r $REPACKING_RADIUS --chain $CHAIN_TO_BE_MUTATED </pre>
+
+This script will 
 
 
